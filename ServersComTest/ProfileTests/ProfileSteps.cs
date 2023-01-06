@@ -308,6 +308,8 @@ namespace ServersComTest.ProfileTests
         {
             var paymentMethodsPage = new PaymentMethodsPage(_driver);
 
+            //Костыль по причине ошибки stale element reference: element is not attached to the page document при локальном запуске пачки тестов
+            Thread.Sleep(500);
             Assert.AreEqual("Payment methods", paymentMethodsPage.ModuleNameText);
         }
 

@@ -26,7 +26,7 @@ namespace ServersComTest
         public void DeleteWebDriver()
         {
             var driver = (ChromeDriver)_scenatioContext["driver"];
-            //driver.Quit();
+            driver.Quit();
         }
     }
 }
