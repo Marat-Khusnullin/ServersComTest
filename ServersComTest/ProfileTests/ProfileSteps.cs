@@ -254,6 +254,7 @@ namespace ServersComTest.ProfileTests
         }
 
 
+
         [Then(@"отображается сообщение об успешном действии с текстом (.*)")]
         public void ThenSuccessActionMessageDisplayed(string text)
         {
@@ -262,14 +263,6 @@ namespace ServersComTest.ProfileTests
             // Здесь было решено не проверять само отображение сообщения, ибо наличие текста уже подразумевает наличие сообщения
             Assert.AreEqual(text, userPage.SuccessActionMessageText, "Текст сообщения не соответствует ожидаемому");
             userPage.SuccessActionMessageCloseButton.Click();
-        }
-
-        [Then(@"отображается страница Contact info")]
-        public void ThenContactInfoPageDisplayed()
-        {
-            var contactInfoPage = new ContactInfoPage(_driver);
-
-            Assert.AreEqual("Contact info", contactInfoPage.ModuleNameText);
         }
 
         [Then(@"на странице Contact info отображаются введенные раннее данные контакта")]
@@ -303,14 +296,20 @@ namespace ServersComTest.ProfileTests
             Assert.IsFalse(contactsPage.IsTableRowDisplayed(name), "Добавленный контакт всё ещё отображается в таблице");
         }
 
-        [Then(@"отображается страница Payment methods")]
-        public void ThenPaymentMethodsPageDisplayed()
+        [Then(@"в шапке сайта отображается цепочка модулей (.*)")]
+        public void ModulesChainDisplayed(string modulesChain)
         {
-            var paymentMethodsPage = new PaymentMethodsPage(_driver);
+            var mainPage = new MainSitePage(_driver);
+            Assert.AreEqual(modulesChain, mainPage.GetModulesChain(), "Цепочка модулей отображается некорректно");
+        }
 
+        [Then(@"отображается модуль (.*)")]
+        public void ModuleDisplayed(string moduleName)
+        {
+            var basePage = new BaseModulePage(_driver);
             //Костыль по причине ошибки stale element reference: element is not attached to the page document при локальном запуске пачки тестов
-            Thread.Sleep(500);
-            Assert.AreEqual("Payment methods", paymentMethodsPage.ModuleNameText);
+            Thread.Sleep(1000);
+            Assert.AreEqual(moduleName, basePage.ModuleNameText, $"Модуль {moduleName} не отобразился");
         }
 
 

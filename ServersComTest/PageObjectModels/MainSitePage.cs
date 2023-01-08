@@ -168,5 +168,15 @@ namespace ServersComTest.PageObjectModels
                 return false;
             }
         }
+
+        /// <summary>
+        /// Получения цепочки модулей из шапки сайта
+        /// </summary>
+        /// <returns></returns>
+        public string GetModulesChain()
+        {
+            var modulesList = NavModulesList.FindElements(By.XPath("li")).Select(element => element.Text).ToList();
+            return string.Join("-", modulesList);
+        }
     }
 }

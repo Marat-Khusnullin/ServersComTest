@@ -27,7 +27,7 @@ namespace ServersComTest.LoginTests
             page.CookieButton.Click();
         }
 
-        [Given(@"заполняем поле Email значением (.*)"), Scope(Tag = "login_page")]
+        [Given(@"поле Email заполняем значением (.*)")]
         public void GivenFillEmailField(string email)
         {
             var loginPage = new LoginPage(_driver);
@@ -35,7 +35,7 @@ namespace ServersComTest.LoginTests
             _scenarioContext["email"] = email;
         }
 
-        [Given(@"заполняем поле Password значением (.*)"), Scope(Tag = "login_page")]
+        [Given(@"поле Password заполняем значением (.*)")]
         public void GivenFillPasswordField(string password)
         {
             var loginPage = new LoginPage(_driver);

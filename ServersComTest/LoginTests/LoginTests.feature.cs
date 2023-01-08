@@ -85,12 +85,10 @@ namespace ServersComTest.LoginTests
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Успешная авторизация пользователя")]
         [NUnit.Framework.CategoryAttribute("positive")]
-        [NUnit.Framework.CategoryAttribute("login_page")]
         public void УспешнаяАвторизацияПользователя()
         {
             string[] tagsOfScenario = new string[] {
-                    "positive",
-                    "login_page"};
+                    "positive"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Успешная авторизация пользователя", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 7
@@ -107,10 +105,10 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 8
- testRunner.Given("заполняем поле Email значением 55klevanso55+ask_ev@gmail.com", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Допустим ");
+ testRunner.Given("поле Email заполняем значением 55klevanso55+ask_ev@gmail.com", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Допустим ");
 #line hidden
 #line 9
- testRunner.And("заполняем поле Password значением serverstest", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
+ testRunner.And("поле Password заполняем значением serverstest", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
 #line hidden
 #line 10
  testRunner.When("нажимаем кнопку входа", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
@@ -125,12 +123,10 @@ this.FeatureBackground();
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Отображение значков корректных значений в полях Email и Password")]
         [NUnit.Framework.CategoryAttribute("positive")]
-        [NUnit.Framework.CategoryAttribute("login_page")]
         public void ОтображениеЗначковКорректныхЗначенийВПоляхEmailИPassword()
         {
             string[] tagsOfScenario = new string[] {
-                    "positive",
-                    "login_page"};
+                    "positive"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Отображение значков корректных значений в полях Email и Password", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 14
@@ -147,10 +143,10 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 15
- testRunner.Given("заполняем поле Email значением 55klevanso55+ask_ev@gmail.com", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Допустим ");
+ testRunner.Given("поле Email заполняем значением 55klevanso55+ask_ev@gmail.com", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Допустим ");
 #line hidden
 #line 16
- testRunner.And("заполняем поле Password значением serverstest", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
+ testRunner.And("поле Password заполняем значением serverstest", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
 #line hidden
 #line 17
  testRunner.When("нажимаем на логотип сайта", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
@@ -168,12 +164,10 @@ this.FeatureBackground();
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Успешный выход из профиля")]
         [NUnit.Framework.CategoryAttribute("positive")]
-        [NUnit.Framework.CategoryAttribute("login_page")]
         public void УспешныйВыходИзПрофиля()
         {
             string[] tagsOfScenario = new string[] {
-                    "positive",
-                    "login_page"};
+                    "positive"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Успешный выход из профиля", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 22
@@ -190,10 +184,10 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 23
- testRunner.Given("заполняем поле Email значением 55klevanso55+ask_ev@gmail.com", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Допустим ");
+ testRunner.Given("поле Email заполняем значением 55klevanso55+ask_ev@gmail.com", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Допустим ");
 #line hidden
 #line 24
- testRunner.And("заполняем поле Password значением serverstest", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
+ testRunner.And("поле Password заполняем значением serverstest", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
 #line hidden
 #line 25
  testRunner.And("нажимаем кнопку входа", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
@@ -215,13 +209,11 @@ this.FeatureBackground();
         [NUnit.Framework.DescriptionAttribute("Успешный выход из профиля и нажатие на кнопку назад")]
         [NUnit.Framework.CategoryAttribute("positive")]
         [NUnit.Framework.CategoryAttribute("bug")]
-        [NUnit.Framework.CategoryAttribute("login_page")]
         public void УспешныйВыходИзПрофиляИНажатиеНаКнопкуНазад()
         {
             string[] tagsOfScenario = new string[] {
                     "positive",
-                    "bug",
-                    "login_page"};
+                    "bug"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Успешный выход из профиля и нажатие на кнопку назад", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 31
@@ -238,10 +230,10 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 32
- testRunner.Given("заполняем поле Email значением 55klevanso55+ask_ev@gmail.com", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Допустим ");
+ testRunner.Given("поле Email заполняем значением 55klevanso55+ask_ev@gmail.com", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Допустим ");
 #line hidden
 #line 33
- testRunner.And("заполняем поле Password значением serverstest", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
+ testRunner.And("поле Password заполняем значением serverstest", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
 #line hidden
 #line 34
  testRunner.And("нажимаем кнопку входа", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
@@ -266,12 +258,10 @@ this.FeatureBackground();
         [NUnit.Framework.DescriptionAttribute("Успешный выход из профиля и нажатие на кнопку назад после загрузки страницы входа" +
             "")]
         [NUnit.Framework.CategoryAttribute("positive")]
-        [NUnit.Framework.CategoryAttribute("login_page")]
         public void УспешныйВыходИзПрофиляИНажатиеНаКнопкуНазадПослеЗагрузкиСтраницыВхода()
         {
             string[] tagsOfScenario = new string[] {
-                    "positive",
-                    "login_page"};
+                    "positive"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Успешный выход из профиля и нажатие на кнопку назад после загрузки страницы входа" +
                     "", null, tagsOfScenario, argumentsOfScenario, featureTags);
@@ -289,10 +279,10 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 42
- testRunner.Given("заполняем поле Email значением 55klevanso55+ask_ev@gmail.com", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Допустим ");
+ testRunner.Given("поле Email заполняем значением 55klevanso55+ask_ev@gmail.com", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Допустим ");
 #line hidden
 #line 43
- testRunner.And("заполняем поле Password значением serverstest", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
+ testRunner.And("поле Password заполняем значением serverstest", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
 #line hidden
 #line 44
  testRunner.And("нажимаем кнопку входа", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
@@ -325,12 +315,10 @@ this.FeatureBackground();
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Отображение предупреждений о необходимости заполнить поле Email")]
         [NUnit.Framework.CategoryAttribute("negative")]
-        [NUnit.Framework.CategoryAttribute("login_page")]
         public void ОтображениеПредупрежденийОНеобходимостиЗаполнитьПолеEmail()
         {
             string[] tagsOfScenario = new string[] {
-                    "negative",
-                    "login_page"};
+                    "negative"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Отображение предупреждений о необходимости заполнить поле Email", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 54
@@ -362,12 +350,10 @@ this.FeatureBackground();
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Отображение предупреждений о необходимости заполнить поле Password")]
         [NUnit.Framework.CategoryAttribute("negative")]
-        [NUnit.Framework.CategoryAttribute("login_page")]
         public void ОтображениеПредупрежденийОНеобходимостиЗаполнитьПолеPassword()
         {
             string[] tagsOfScenario = new string[] {
-                    "negative",
-                    "login_page"};
+                    "negative"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Отображение предупреждений о необходимости заполнить поле Password", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 60
@@ -399,12 +385,10 @@ this.FeatureBackground();
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Отображение предупреждений о некоррекности введенного значения в поле Email")]
         [NUnit.Framework.CategoryAttribute("negative")]
-        [NUnit.Framework.CategoryAttribute("login_page")]
         public void ОтображениеПредупрежденийОНекоррекностиВведенногоЗначенияВПолеEmail()
         {
             string[] tagsOfScenario = new string[] {
-                    "negative",
-                    "login_page"};
+                    "negative"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Отображение предупреждений о некоррекности введенного значения в поле Email", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 66
@@ -421,7 +405,7 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 67
- testRunner.Given("заполняем поле Email значением 12345", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Допустим ");
+ testRunner.Given("поле Email заполняем значением 12345", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Допустим ");
 #line hidden
 #line 68
  testRunner.And("нажимаем кнопку входа", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
@@ -439,12 +423,10 @@ this.FeatureBackground();
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Отображение предупреждений о некоррекности введенного значения в поле Password")]
         [NUnit.Framework.CategoryAttribute("negative")]
-        [NUnit.Framework.CategoryAttribute("login_page")]
         public void ОтображениеПредупрежденийОНекоррекностиВведенногоЗначенияВПолеPassword()
         {
             string[] tagsOfScenario = new string[] {
-                    "negative",
-                    "login_page"};
+                    "negative"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Отображение предупреждений о некоррекности введенного значения в поле Password", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 73
@@ -461,10 +443,10 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 74
- testRunner.Given("заполняем поле Email значением 12345", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Допустим ");
+ testRunner.Given("поле Email заполняем значением 12345", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Допустим ");
 #line hidden
 #line 75
- testRunner.And("заполняем поле Password значением server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
+ testRunner.And("поле Password заполняем значением server", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
 #line hidden
 #line 76
  testRunner.And("нажимаем кнопку входа", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
@@ -483,12 +465,10 @@ this.FeatureBackground();
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Отображение сообщения о некорректной почте или пароле")]
         [NUnit.Framework.CategoryAttribute("negative")]
-        [NUnit.Framework.CategoryAttribute("login_page")]
         public void ОтображениеСообщенияОНекорректнойПочтеИлиПароле()
         {
             string[] tagsOfScenario = new string[] {
-                    "negative",
-                    "login_page"};
+                    "negative"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Отображение сообщения о некорректной почте или пароле", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 81
@@ -505,10 +485,10 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 82
- testRunner.Given("заполняем поле Email значением incorrectemail@mail.ru", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Допустим ");
+ testRunner.Given("поле Email заполняем значением incorrectemail@mail.ru", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Допустим ");
 #line hidden
 #line 83
- testRunner.And("заполняем поле Password значением incorrectpassword", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
+ testRunner.And("поле Password заполняем значением incorrectpassword", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
 #line hidden
 #line 84
  testRunner.When("нажимаем кнопку входа", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");

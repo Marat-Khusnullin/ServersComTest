@@ -1,4 +1,4 @@
-﻿Функция: Проверка функций сайта
+﻿Функция: Проверка функций сайта - работа с контактами,заказ сервера, работа меню
 
 Контекст: 
 	Дано произведена авторизация пользователя с email 55klevanso55+ask_ev@gmail.com и паролем serverstest
@@ -24,7 +24,7 @@
 	И в поле Contact details записываем значение 434-34-23
 	Когда нажимаем кнопку создания контакта
 	Тогда отображается сообщение об успешном действии с текстом Created successfully
-	И отображается страница Contact info
+	И отображается модуль Contact info
 	И на странице Contact info отображаются введенные раннее данные контакта
 
 @positive
@@ -43,7 +43,7 @@
 	И изменяем все поля контакта
 	Когда нажимаем кнопку сохранения изменений контакта
 	Тогда отображается сообщение об успешном действии с текстом Updated successfully
-	И отображается страница Contact info
+	И отображается модуль Contact info
 	И на странице Contact info отображаются введенные раннее данные контакта
 
 @positive
@@ -58,5 +58,27 @@
 	И выбираем сетевую опцию Add IPv6 address
 	И в поле Name ввожу значение TestName
 	Когда нажимаем кнопку создания сервера
-	Тогда отображается страница Payment methods
+	Тогда отображается модуль Payment methods
 
+@positive 
+Сценарий: Проверка перехода к подмодулю
+	Допустим нажимаем кнопку модуля <First Module>
+	И нажимаем кнопку модуля <Second Module>
+	Тогда отображается модуль <Submodule name>
+	И в шапке сайта отображается цепочка модулей <Modules chain>
+	
+	Примеры: 
+	| First Module  | Second Module       | Submodule name      | Modules chain                               |
+	| Networks      | Direct Connect      | Direct Connect      | Dashboard-Networks-Direct Connect           |
+	| Networks      | L2 Segments         | L2 Segments         | Dashboard-Networks-L2 Segments              |
+	| Cloud Servers | Create & Manage     | Cloud Servers       | Dashboard-Cloud Servers                     |
+	| Cloud Servers | Images              | Images              | Dashboard-Cloud Servers-Images              |
+	| Cloud Servers | Volumes             | Volumes             | Dashboard-Cloud Servers-Volumes             |
+	| Cloud Servers | Snapshots & Backups | Snapshots & Backups | Dashboard-Cloud Servers-Snapshots & Backups |
+	| Monitoring    | Notifications       | Notification groups | Dashboard-Monitoring-Notifications          |
+	| Monitoring    | Healthchecks        | Server healthchecks | Dashboard-Monitoring-Healthchecks           |
+	| Reports       | Cloud Storage       | Report              | Dashboard-Cloud Storage-Report              |
+	| Reports       | Cloud Servers       | Report              | Dashboard-Cloud Servers-Report              |
+	| Profile       | Account             | Account             | Dashboard-Profile-Account                   |
+	| Profile       | Contacts            | Contacts            | Dashboard-Profile-Contacts                  |
+	| Profile       | Public API          | Public API          | Dashboard-Profile-Public API                |

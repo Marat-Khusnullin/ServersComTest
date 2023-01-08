@@ -20,8 +20,8 @@ namespace ServersComTest.ProfileTests
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Проверка функций сайта")]
-    public partial class ПроверкаФункцийСайтаFeature
+    [NUnit.Framework.DescriptionAttribute("Проверка функций сайта - работа с контактами,заказ сервера, работа меню")]
+    public partial class ПроверкаФункцийСайта_РаботаСКонтактамиЗаказСервераРаботаМенюFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -35,7 +35,7 @@ namespace ServersComTest.ProfileTests
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("ru-RU"), "ProfileTests", "Проверка функций сайта", null, ProgrammingLanguage.CSharp, featureTags);
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("ru-RU"), "ProfileTests", "Проверка функций сайта - работа с контактами,заказ сервера, работа меню", null, ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -163,7 +163,7 @@ this.FeatureBackground();
  testRunner.Then("отображается сообщение об успешном действии с текстом Created successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
 #line hidden
 #line 27
- testRunner.And("отображается страница Contact info", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
+ testRunner.And("отображается модуль Contact info", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
 #line hidden
 #line 28
  testRunner.And("на странице Contact info отображаются введенные раннее данные контакта", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
@@ -254,7 +254,7 @@ this.FeatureBackground();
  testRunner.Then("отображается сообщение об успешном действии с текстом Updated successfully", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
 #line hidden
 #line 46
- testRunner.And("отображается страница Contact info", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
+ testRunner.And("отображается модуль Contact info", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
 #line hidden
 #line 47
  testRunner.And("на странице Contact info отображаются введенные раннее данные контакта", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
@@ -316,7 +316,67 @@ this.FeatureBackground();
  testRunner.When("нажимаем кнопку создания сервера", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Когда ");
 #line hidden
 #line 61
- testRunner.Then("отображается страница Payment methods", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
+ testRunner.Then("отображается модуль Payment methods", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Проверка перехода к подмодулю")]
+        [NUnit.Framework.CategoryAttribute("positive")]
+        [NUnit.Framework.TestCaseAttribute("Networks", "Direct Connect", "Direct Connect", "Dashboard-Networks-Direct Connect", null)]
+        [NUnit.Framework.TestCaseAttribute("Networks", "L2 Segments", "L2 Segments", "Dashboard-Networks-L2 Segments", null)]
+        [NUnit.Framework.TestCaseAttribute("Cloud Servers", "Create & Manage", "Cloud Servers", "Dashboard-Cloud Servers", null)]
+        [NUnit.Framework.TestCaseAttribute("Cloud Servers", "Images", "Images", "Dashboard-Cloud Servers-Images", null)]
+        [NUnit.Framework.TestCaseAttribute("Cloud Servers", "Volumes", "Volumes", "Dashboard-Cloud Servers-Volumes", null)]
+        [NUnit.Framework.TestCaseAttribute("Cloud Servers", "Snapshots & Backups", "Snapshots & Backups", "Dashboard-Cloud Servers-Snapshots & Backups", null)]
+        [NUnit.Framework.TestCaseAttribute("Monitoring", "Notifications", "Notification groups", "Dashboard-Monitoring-Notifications", null)]
+        [NUnit.Framework.TestCaseAttribute("Monitoring", "Healthchecks", "Server healthchecks", "Dashboard-Monitoring-Healthchecks", null)]
+        [NUnit.Framework.TestCaseAttribute("Reports", "Cloud Storage", "Report", "Dashboard-Cloud Storage-Report", null)]
+        [NUnit.Framework.TestCaseAttribute("Reports", "Cloud Servers", "Report", "Dashboard-Cloud Servers-Report", null)]
+        [NUnit.Framework.TestCaseAttribute("Profile", "Account", "Account", "Dashboard-Profile-Account", null)]
+        [NUnit.Framework.TestCaseAttribute("Profile", "Contacts", "Contacts", "Dashboard-Profile-Contacts", null)]
+        [NUnit.Framework.TestCaseAttribute("Profile", "Public API", "Public API", "Dashboard-Profile-Public API", null)]
+        public void ПроверкаПереходаКПодмодулю(string firstModule, string secondModule, string submoduleName, string modulesChain, string[] exampleTags)
+        {
+            string[] @__tags = new string[] {
+                    "positive"};
+            if ((exampleTags != null))
+            {
+                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
+            }
+            string[] tagsOfScenario = @__tags;
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("First Module", firstModule);
+            argumentsOfScenario.Add("Second Module", secondModule);
+            argumentsOfScenario.Add("Submodule name", submoduleName);
+            argumentsOfScenario.Add("Modules chain", modulesChain);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Проверка перехода к подмодулю", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 64
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 3
+this.FeatureBackground();
+#line hidden
+#line 65
+ testRunner.Given(string.Format("нажимаем кнопку модуля {0}", firstModule), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Допустим ");
+#line hidden
+#line 66
+ testRunner.And(string.Format("нажимаем кнопку модуля {0}", secondModule), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
+#line hidden
+#line 67
+ testRunner.Then(string.Format("отображается модуль {0}", submoduleName), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Тогда ");
+#line hidden
+#line 68
+ testRunner.And(string.Format("в шапке сайта отображается цепочка модулей {0}", modulesChain), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "И ");
 #line hidden
             }
             this.ScenarioCleanup();
